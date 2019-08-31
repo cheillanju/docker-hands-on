@@ -1,0 +1,20 @@
+version: '3'
+services:
+  server:
+    build:
+      context: .
+    depends_on:
+      - database
+    ports:
+      - "8000:8000"
+    volumes:
+      - //d/docker/hands_on/ex_docker_compose/server:/app/server
+    command: ["python", "/app/server/simple_server.py"]
+
+  database:
+    image: postgres:alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=popeye
+      - POSTGRES_PASSWORD=!#please_Stop-Phishing~9
+      - POSTGRES_DB=findus
