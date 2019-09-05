@@ -42,14 +42,14 @@
 
 |Parameter|Description|Example|
 |--|--|--|
-|`-d, --detach`|Run container in background|`docker run -d imageName`|
-|`--entrypoint`|Overwrite default entrypoint|`docker run --entrypoint "myEntrypoint" imageName`|
-|`-e, --env`|Define environment variables|`docker run -e "envVarName=value" imageName`|
-|`-i, --interactive`|Keep STDIN open|`docker run -i imageName`|
-|`--name`|Name of the container|`docker run --name containerName imageName`|
-|`-p, --publish`|Publish container's port|`docker run -p hostPort:containerPort imageName`|
-|`-v, --volume`|Mount a volume|`docker run -v hostPath:containerPath imageName`|
-|`-t, --tty`|Allocate a pseudo-tty|`docker run -t imageName`|
+|`-d, --detach`|Run container in background|`docker run -d imageName cmdToExecute`|
+|`--entrypoint`|Overwrite default entrypoint|`docker run --entrypoint "myEntrypoint" imageName cmdToExecute`|
+|`-e, --env`|Define environment variables|`docker run -e "envVarName=value" imageName cmdToExecute`|
+|`-i, --interactive`|Keep STDIN open|`docker run -i imageName cmdToExecute`|
+|`--name`|Name of the container|`docker run --name containerName imageName cmdToExecute`|
+|`-p, --publish`|Publish container's port|`docker run -p hostPort:containerPort imageName cmdToExecute`|
+|`-v, --volume`|Mount a volume|`docker run -v hostPath:containerPath imageName cmdToExecute`|
+|`-t, --tty`|Allocate a pseudo-tty|`docker run -t imageName cmdToExecute`|
 <br>
 <br>
 
