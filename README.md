@@ -38,7 +38,7 @@
 
 ### docker run syntax
 
-`docker run --params imageName`
+`docker run --params imageName cmdToExecute`
 
 |Parameter|Description|Example|
 |--|--|--|
