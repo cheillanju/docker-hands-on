@@ -21,7 +21,7 @@
 
 ## docker build cheatsheet
 
-### docker run syntax
+### docker build syntax
 
 `docker build --params dockerfileDirectory`
 
